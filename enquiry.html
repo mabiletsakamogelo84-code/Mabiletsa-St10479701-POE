@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | Thuba Rush Kota Joint</title>
+  <meta name="description" content="Send Thuba Rush Kota Joint an enquiry about catering, bulk orders, delivery partnerships or general feedback.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary">
+      <a href="index.html" class="nav__brand">
+        <span class="logo-mark" aria-hidden="true">TR</span>
+        <span class="nav__brand-text">
+          <strong style="font-weight:700;">Thuba Rush</strong>
+          <span>Kota Joint · Pretoria</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" style="padding-bottom:60px;">
+      <div class="wrap" style="grid-template-columns:1fr; text-align:left;">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h1>Got an order in mind?</h1>
+          <p class="lede">Whether it's a catering quote, a bulk order for the office, a delivery partnership, or just feedback on your last kota — tell us about it below.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="card-grid card-grid--2" style="align-items:start;">
+
+          <form class="form" data-form novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form__group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form__group">
+              <label for="type">Enquiry type</label>
+              <select id="type" name="type" required>
+                <option value="">Select an option</option>
+                <option value="catering">Catering / bulk order</option>
+                <option value="delivery">Delivery partnership</option>
+                <option value="feedback">Feedback about a visit</option>
+                <option value="general">General enquiry</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" required placeholder="Tell us the details — event date, number of people, or what's on your mind."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send enquiry</button>
+            <div class="form__success" role="status"></div>
+          </form>
+
+          <div>
+            <div class="card" style="margin-bottom:24px;">
+              <p class="card__num">Catering &amp; bulk orders</p>
+              <h3>Feeding a crowd?</h3>
+              <p>We put together kota and chicken platters for offices, birthdays and community events. Give us your headcount and date and we'll come back with pricing.</p>
+            </div>
+            <div class="card" style="margin-bottom:24px;">
+              <p class="card__num">Delivery partners</p>
+              <h3>Order through a platform</h3>
+              <p>Thuba Rush is also available through third-party delivery apps for when you'd rather stay put. Ask us which platforms cover your area.</p>
+            </div>
+            <div class="card">
+              <p class="card__num">Prefer to call?</p>
+              <h3>Visit our contact page</h3>
+              <p>Head to the <a href="contact.html" style="text-decoration:underline; color:var(--red);">Contact Us</a> page for phone numbers, addresses and a map to both branches.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="logo-mark" aria-hidden="true">TR</span>
+          <strong style="font-weight:700; margin-left:10px;">Thuba Rush Kota Joint</strong>
+          <p style="margin-top:10px; max-width:34ch;">Loaded kotas, wings and grilled chicken, served fast from two spots in Pretoria.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Find us</h4>
+          <ul>
+            <li>230 Pretorius Street, Opera Plaza</li>
+            <li>Pretoria Central, 0002</li>
+            <li>Arcadia, Pretoria</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> Thuba Rush Kota Joint, Pretoria.</span>
+        <span>Built for the Thuba Rush website project.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
