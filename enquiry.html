@@ -46,42 +46,145 @@
       <div class="wrap">
         <div class="card-grid card-grid--2" style="align-items:start;">
 
-          <form class="form" data-form novalidate>
-            <div class="form__row">
-              <div class="form__group">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form__group">
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" required>
-              </div>
-            </div>
+          <form class="form" id="enquiry-form" action="#" method="post" novalidate>
 
-            <div class="form__group">
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" required>
-            </div>
+  <div class="form__row">
 
-            <div class="form__group">
-              <label for="type">Enquiry type</label>
-              <select id="type" name="type" required>
-                <option value="">Select an option</option>
-                <option value="catering">Catering / bulk order</option>
-                <option value="delivery">Delivery partnership</option>
-                <option value="feedback">Feedback about a visit</option>
-                <option value="general">General enquiry</option>
-              </select>
-            </div>
+    <div class="form__group">
 
-            <div class="form__group">
-              <label for="message">Your message</label>
-              <textarea id="message" name="message" required placeholder="Tell us the details — event date, number of people, or what's on your mind."></textarea>
-            </div>
+      <label for="name">Full name</label>
 
-            <button type="submit" class="btn btn--primary">Send enquiry</button>
-            <div class="form__success" role="status"></div>
-          </form>
+      <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+
+      <span class="form__error" id="name-error"></span>
+
+    </div>
+
+    <div class="form__group">
+
+      <label for="phone">Phone number</label>
+
+      <input type="tel" id="phone" name="phone" required placeholder="e.g. 071 234 5678" autocomplete="tel">
+
+      <span class="form__error" id="phone-error"></span>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="form__group">
+
+    <label for="email">Email address</label>
+
+    <input type="email" id="email" name="email" required autocomplete="email">
+
+    <span class="form__error" id="email-error"></span>
+
+  </div>
+
+
+
+  <div class="form__group">
+
+    <label for="type">Enquiry type</label>
+
+    <select id="type" name="type" required>
+
+      <option value="">Select an option</option>
+
+      <option value="catering">Catering / bulk order (service)</option>
+
+      <option value="products">Menu item order (product)</option>
+
+      <option value="volunteering">Volunteering</option>
+
+      <option value="sponsorship">Sponsorship / partnership</option>
+
+    </select>
+
+    <span class="form__error" id="type-error"></span>
+
+  </div>
+
+
+
+  <div id="order-fields" hidden>
+
+    <div class="form__group">
+
+      <label for="product">Menu item</label>
+
+      <select id="product" name="product">
+
+        <option value="">Choose an item</option>
+
+        <option value="classic" data-price="45" data-name="Classic Kota">Classic Kota (R45 each)</option>
+
+        <option value="rush" data-price="65" data-name="The Rush Special">The Rush Special (R65 each)</option>
+
+        <option value="rib" data-price="75" data-name="Rib Kota">Rib Kota (R75 each)</option>
+
+        <option value="veggie" data-price="42" data-name="Veggie Kota">Veggie Kota (R42 each)</option>
+
+        <option value="wings6" data-price="70" data-name="6-Piece Wings and Chips">6-Piece Wings &amp; Chips (R70 each)</option>
+
+        <option value="wings10" data-price="105" data-name="10-Piece Wings and Chips">10-Piece Wings &amp; Chips (R105 each)</option>
+
+        <option value="chicken-q" data-price="60" data-name="Quarter Chicken and Chips">Quarter Chicken &amp; Chips (R60 each)</option>
+
+        <option value="chicken-h" data-price="95" data-name="Half Chicken and Chips">Half Chicken &amp; Chips (R95 each)</option>
+
+        <option value="chicken-w" data-price="170" data-name="Whole Chicken and Chips">Whole Chicken &amp; Chips (R170 each)</option>
+
+      </select>
+
+      <span class="form__error" id="product-error"></span>
+    </div>
+    <div class="form__row">
+      <div class="form__group">
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="500" value="1">
+        <span class="form__error" id="quantity-error"></span>
+      </div>
+      <div class="form__group">
+        <label for="event-date">Date needed</label>
+        <input type="date" id="event-date" name="eventDate">
+        <span class="form__error" id="event-date-error"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <fieldset class="form__group" id="contact-pref">
+    <legend>How should we reply?</legend>
+    <div class="form__choices">
+      <label><input type="radio" name="contactPref" value="email"> Email</label>
+      <label><input type="radio" name="contactPref" value="phone"> Phone call</label>
+    </div>
+    <span class="form__error" id="contact-pref-error"></span>
+  </fieldset>
+
+  <div class="form__group">
+
+    <label for="message">Your message</label>
+    <textarea id="message" name="message" required placeholder="Tell us the details, like the event, number of people, or what's on your mind."></textarea>
+    <span class="form__error" id="message-error"></span>
+
+  </div>
+
+
+
+  <div class="form__group">
+
+    <label class="form__check"><input type="checkbox" id="consent" name="consent"> I agree that Thuba Rush may contact me about this enquiry.</label>
+    <span class="form__error" id="consent-error"></span>
+  </div>
+  <button type="submit" class="btn btn--primary">Send enquiry</button>
+  <div class="form__success" id="enquiry-response" role="status" aria-live="polite"></div>
+</form>
 
           <div>
             <div class="card" style="margin-bottom:24px;">
@@ -142,7 +245,7 @@
   </footer>
 
   <script src="js/script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
 </body>
 </html>
 

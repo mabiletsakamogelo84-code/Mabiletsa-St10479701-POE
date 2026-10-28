@@ -45,150 +45,56 @@
     <section class="section">
       <div class="wrap">
 
-        <!-- SIGNATURE KOTAS -->
-        <div class="menu-category">
-          <div class="menu-category__head">
-            <h3>Signature Kotas</h3>
-            <span>Quarter loaf, toasted</span>
-          </div>
+        <div class="menu-controls">
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Classic Kota</div>
-              <div class="menu-item__desc">Chips, polony, a fried egg and a spoon of atchar in a toasted quarter loaf.</div>
-            </div>
-            <div class="menu-item__price">R45</div>
-          </div>
+  <label for="menu-search">Search
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">The Rush Special <span class="tag">Best seller</span></div>
-              <div class="menu-item__desc">Chips, polony, viennas, melted cheese, egg and extra atchar — our most loaded build.</div>
-            </div>
-            <div class="menu-item__price">R65</div>
-          </div>
+    <input type="search" id="menu-search" placeholder="e.g. chips, chicken">
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Rib Kota</div>
-              <div class="menu-item__desc">Saucy rib meat piled onto chips and cheese, finished with a drizzle of house sauce.</div>
-            </div>
-            <div class="menu-item__price">R75</div>
-          </div>
+  </label>
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Veggie Kota</div>
-              <div class="menu-item__desc">Chips, cheese, fried egg and atchar — a meat-free loaf that still comes fully loaded.</div>
-            </div>
-            <div class="menu-item__price">R42</div>
-          </div>
-        </div>
+  <label for="menu-category">Category
 
-        <!-- WINGS -->
-        <div class="menu-category">
-          <div class="menu-category__head">
-            <h3>Wings</h3>
-            <span>Choose your flavour</span>
-          </div>
+    <select id="menu-category">
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">6-Piece Wings &amp; Chips</div>
-              <div class="menu-item__desc">Crispy wings tossed in your choice of Hot Rush, Peri-Peri, BBQ, or Lemon &amp; Herb, served with golden chips.</div>
-            </div>
-            <div class="menu-item__price">R70</div>
-          </div>
+      <option value="all">All</option>
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">10-Piece Wings &amp; Chips</div>
-              <div class="menu-item__desc">The bigger portion, same flavour choices, perfect for sharing (if you're willing to).</div>
-            </div>
-            <div class="menu-item__price">R105</div>
-          </div>
-        </div>
+      <option>Kotas</option>
 
-        <!-- GRILLED CHICKEN -->
-        <div class="menu-category">
-          <div class="menu-category__head">
-            <h3>Grilled Chicken</h3>
-            <span>Flame-grilled &amp; basted</span>
-          </div>
+      <option>Wings</option>
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Quarter Chicken &amp; Chips</div>
-              <div class="menu-item__desc">Grilled and basted, served with a side of chips.</div>
-            </div>
-            <div class="menu-item__price">R60</div>
-          </div>
+      <option>Grilled Chicken</option>
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Half Chicken &amp; Chips</div>
-              <div class="menu-item__desc">Perfect for one hungry person, or two who don't mind sharing chips.</div>
-            </div>
-            <div class="menu-item__price">R95</div>
-          </div>
+      <option>Sides</option>
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Whole Chicken &amp; Chips</div>
-              <div class="menu-item__desc">A full flame-grilled chicken with a generous side of chips, built for the table.</div>
-            </div>
-            <div class="menu-item__price">R170</div>
-          </div>
-        </div>
+      <option>Drinks</option>
 
-        <!-- SIDES -->
-        <div class="menu-category">
-          <div class="menu-category__head">
-            <h3>Sides</h3>
-            <span>Top up any order</span>
-          </div>
+    </select>
 
-          <div class="menu-item">
-            <div><div class="menu-item__name">Regular Chips</div></div>
-            <div class="menu-item__price">R25</div>
-          </div>
-          <div class="menu-item">
-            <div><div class="menu-item__name">Russian &amp; Chips</div></div>
-            <div class="menu-item__price">R38</div>
-          </div>
-          <div class="menu-item">
-            <div><div class="menu-item__name">Extra Atchar</div></div>
-            <div class="menu-item__price">R10</div>
-          </div>
-          <div class="menu-item">
-            <div><div class="menu-item__name">Extra Cheese</div></div>
-            <div class="menu-item__price">R12</div>
-          </div>
-        </div>
+  </label>
 
-        <!-- SHAKES & DRINKS -->
-        <div class="menu-category">
-          <div class="menu-category__head">
-            <h3>Shakes &amp; Drinks</h3>
-            <span>To wash it down</span>
-          </div>
+  <label for="menu-sort">Sort by
 
-          <div class="menu-item">
-            <div>
-              <div class="menu-item__name">Milkshake</div>
-              <div class="menu-item__desc">Chocolate, vanilla, or strawberry.</div>
-            </div>
-            <div class="menu-item__price">R35</div>
-          </div>
-          <div class="menu-item">
-            <div><div class="menu-item__name">Soft Drink (330ml)</div></div>
-            <div class="menu-item__price">R18</div>
-          </div>
-          <div class="menu-item">
-            <div><div class="menu-item__name">Bottled Water</div></div>
-            <div class="menu-item__price">R15</div>
-          </div>
-        </div>
+    <select id="menu-sort">
+
+      <option value="default">Menu order</option>
+
+      <option value="low">Price: low to high</option>
+
+      <option value="high">Price: high to low</option>
+
+      <option value="az">Name: A to Z</option>
+
+    </select>
+
+  </label>
+
+</div>
+
+<p id="menu-count" aria-live="polite"></p>
+
+<div id="menu-list"></div>
+
 
         <div class="card" style="margin-top:10px;">
           <h3>Catering &amp; bulk orders</h3>

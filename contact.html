@@ -6,6 +6,7 @@
   <title>Contact Us | Thuba Rush Kota Joint</title>
   <meta name="description" content="Find Thuba Rush Kota Joint's two Pretoria locations, opening hours, phone numbers and a quick contact form.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -47,9 +48,7 @@
         <div class="card-grid card-grid--2">
 
           <div class="location-card">
-            <iframe class="location-card__map" loading="lazy"
-              src="https://www.google.com/maps?q=230+Pretorius+Street+Opera+Plaza+Pretoria+Central+0002&output=embed"
-              title="Map to Thuba Rush Kota Joint, Pretoria Central"></iframe>
+        
             <div class="location-card__body">
               <p class="eyebrow" style="margin-bottom:.4em;">Branch 01</p>
               <h3>Pretoria Central</h3>
@@ -65,9 +64,7 @@
           </div>
 
           <div class="location-card">
-            <iframe class="location-card__map" loading="lazy"
-              src="https://www.google.com/maps?q=Arcadia+Pretoria&output=embed"
-              title="Map to Thuba Rush Kota Joint, Arcadia"></iframe>
+
             <div class="location-card__body">
               <p class="eyebrow" style="margin-bottom:.4em;">Branch 02</p>
               <h3>Arcadia</h3>
@@ -86,6 +83,13 @@
       </div>
     </section>
 
+   <section class=""section>
+    <div class="wrap"
+    <h2 class="section__title">Find us on the map</h2>
+    <p class="section__lede">Tap a pin to see the branch address</p>
+    <div id="map" role="region" aria-label="Map showing the two Thuba Rush Kota Joint branches in Pretoria"></div>
+   </div>
+   </section>
     <section class="section section--ink">
       <div class="wrap">
         <div class="card-grid card-grid--2" style="align-items:start;">
@@ -164,179 +168,8 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/script.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Thuba Rush Kota Joint</title>
-  <meta name="description" content="Find Thuba Rush Kota Joint's two Pretoria locations, opening hours, phone numbers and a quick contact form.">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="nav wrap" aria-label="Primary">
-      <a href="index.html" class="nav__brand">
-        <span class="logo-mark" aria-hidden="true">TR</span>
-        <span class="nav__brand-text">
-          <strong style="font-weight:700;">Thuba Rush</strong>
-          <span>Kota Joint · Pretoria</span>
-        </span>
-      </a>
-      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main">
-
-    <section class="hero" style="padding-bottom:60px;">
-      <div class="wrap" style="grid-template-columns:1fr; text-align:left;">
-        <div>
-          <p class="eyebrow">Find us</p>
-          <h1>Two spots.<br>One rush.</h1>
-          <p class="lede">Pop in for dine-in or takeout at either branch, or drop us a line below.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="card-grid card-grid--2">
-
-          <div class="location-card">
-            <iframe class="location-card__map" loading="lazy"
-              src="https://www.google.com/maps?q=230+Pretorius+Street+Opera+Plaza+Pretoria+Central+0002&output=embed"
-              title="Map to Thuba Rush Kota Joint, Pretoria Central"></iframe>
-            <div class="location-card__body">
-              <p class="eyebrow" style="margin-bottom:.4em;">Branch 01</p>
-              <h3>Pretoria Central</h3>
-              <dl>
-                <dt>Address</dt>
-                <dd>Opera Plaza, 230 Pretorius Street (opposite FNB Bank), Pretoria Central, 0002</dd>
-                <dt>Hours</dt>
-                <dd>Monday – Sunday, 10:00 – 21:00</dd>
-                <dt>Phone</dt>
-                <dd><a href="tel:+27000000001">012 000 0001</a></dd>
-              </dl>
-            </div>
-          </div>
-
-          <div class="location-card">
-            <iframe class="location-card__map" loading="lazy"
-              src="https://www.google.com/maps?q=Arcadia+Pretoria&output=embed"
-              title="Map to Thuba Rush Kota Joint, Arcadia"></iframe>
-            <div class="location-card__body">
-              <p class="eyebrow" style="margin-bottom:.4em;">Branch 02</p>
-              <h3>Arcadia</h3>
-              <dl>
-                <dt>Address</dt>
-                <dd>Arcadia, Pretoria, Gauteng</dd>
-                <dt>Hours</dt>
-                <dd>Monday – Sunday, 10:00 – 21:00</dd>
-                <dt>Phone</dt>
-                <dd><a href="tel:+27000000002">012 000 0002</a></dd>
-              </dl>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--ink">
-      <div class="wrap">
-        <div class="card-grid card-grid--2" style="align-items:start;">
-          <div>
-            <p class="eyebrow">Send a message</p>
-            <h2 class="section__title" style="color:var(--paper);">Quick contact form</h2>
-            <p class="section__lede">For catering quotes or bulk orders, use the fuller <a href="enquiry.html" style="text-decoration:underline; color:var(--gold);">Enquiry</a> page instead — this one's for quick questions.</p>
-
-            <form class="form" data-form novalidate style="margin-top:28px;">
-              <div class="form__group">
-                <label for="c-name" style="color:var(--gold);">Full name</label>
-                <input type="text" id="c-name" name="name" required>
-              </div>
-              <div class="form__group">
-                <label for="c-email" style="color:var(--gold);">Email address</label>
-                <input type="email" id="c-email" name="email" required>
-              </div>
-              <div class="form__group">
-                <label for="c-message" style="color:var(--gold);">Message</label>
-                <textarea id="c-message" name="message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary">Send message</button>
-              <div class="form__success" role="status"></div>
-            </form>
-          </div>
-
-          <div>
-            <p class="eyebrow">Other ways to reach us</p>
-            <h2 class="section__title" style="color:var(--paper);">Email &amp; social</h2>
-            <div class="card" style="background:var(--ink-soft); border-color:var(--gold); color:var(--paper); margin-bottom:20px;">
-              <h3>Email</h3>
-              <p><a href="mailto:hello@thubarush.co.za" style="color:var(--gold);">hello@thubarush.co.za</a></p>
-            </div>
-            <div class="card" style="background:var(--ink-soft); border-color:var(--gold); color:var(--paper);">
-              <h3>Instagram</h3>
-              <p><a href="https://www.instagram.com/thuba_rush_kota_joint_za/" style="color:var(--gold);" target="_blank" rel="noopener">@thuba_rush_kota_joint_za</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <span class="logo-mark" aria-hidden="true">TR</span>
-          <strong style="font-weight:700; margin-left:10px;">Thuba Rush Kota Joint</strong>
-          <p style="margin-top:10px; max-width:34ch;">Loaded kotas, wings and grilled chicken, served fast from two spots in Pretoria.</p>
-        </div>
-        <div>
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Find us</h4>
-          <ul>
-            <li>230 Pretorius Street, Opera Plaza</li>
-            <li>Pretoria Central, 0002</li>
-            <li>Arcadia, Pretoria</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span>&copy; <span id="year"></span> Thuba Rush Kota Joint, Pretoria.</span>
-        <span>Built for the Thuba Rush website project.</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
-
