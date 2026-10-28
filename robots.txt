@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://mabiletsakamogelo84-code.github.io/Mabiletsa-St10479701-POE/sitemap.xml
+
+
